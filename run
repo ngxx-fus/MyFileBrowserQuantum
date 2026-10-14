@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# FBQ: File Browser Quantum
+export GOTRACEBACK=all
+export FBQ_INSTALL="/home/fus/.fus/Applications/FileBrowserQuantum"
+export FBQ_BIN="/home/fus/.fus/Applications/FileBrowserQuantum/linux-arm64-filebrowser"
+export FBQ_CONFIG="/home/fus/.fus/Applications/FileBrowserQuantum/config.yaml"
+unset FILEBROWSER_DATABASE
+
+cd $FBQ_INSTALL || exit 1
+
+exec 2>&1
+exec $FBQ_BIN -c $FBQ_CONFIG
+
+echo "Sleep 15s before exit..."
+sleep 15
