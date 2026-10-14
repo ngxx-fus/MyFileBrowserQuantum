@@ -1,0 +1,31 @@
+# Databases and SQLite journal/temporary files
+*.db
+*.db-wal
+*.db-shm
+*.db.old
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+
+# Backups and old configurations
+*.bak
+*.backup
+*.old
+
+# Cache and temporary directories
+tmp/
+cache/
+
+# Binaries and compressed release archives
+filebrowser
+FileBrowserQuantum
+linux-arm64-filebrowser
+*-filebrowser
+*.tar.gz
+*.zip
+UPX*
+
+# Logs
+*.log
+
